@@ -23,6 +23,25 @@
             stroke-width: 2;
             font-size: 60px;
         }
+        .cursor_pointer{
+            cursor: pointer;
+            opacity: 1;
+            transition: all 0.4s;
+        }
+        .cursor_pointer:hover{
+            opacity: 0.7;
+        }
+        .myframe{
+            border: 1px dotted;
+            padding: 5px;
+        }
+        h5{
+            font-weight: bold !important;
+        }
+        h5 span{
+            font-size: 14px;
+            font-weight: normal;
+        }
 
         @keyframes stroke {
             0% {
@@ -58,17 +77,17 @@
 <body>
 
     <main class="container py-5">
-        <h3 class="pb-5">
+        <h3 class="pb-4">
             <svg viewBox="0 0 1320 100">
                 <text x="50%" y="50%" dy=".35em" text-anchor="middle">
-                    My Portfolio
+                    Portfolio
                 </text>
             </svg>
         </h3>
         <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 690px;">
 
             <div class="col-sm-6 col-lg-4 mb-4">
-                <img src="./img/kyotoen.png" class="img-fluid" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img src="./img/kyotoen.png" class="img-fluid cursor_pointer myframe" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog" style="max-width: 1000px">
@@ -115,6 +134,15 @@
                                             </li>
                                         </ul>
                                     </div>
+                                    <div class="col-12 mt-4 pt-3 border-top">
+                                        <h5 class="h6 lh-base">工夫した点・実績 :
+                                            <br>
+                                            <span>
+                                                ・インスタでアイテムを表示されます。
+                                                ・援農依頼の情報を増やせます。
+                                            </span>
+                                        </h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -123,7 +151,7 @@
             </div>
 
             <div class="col-sm-6 col-lg-4 mb-4">
-                <img src="./img/kyosei.png" class="img-fluid" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                <img src="./img/kyosei.png" class="img-fluid cursor_pointer myframe" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                 <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog" style="max-width: 1000px">
@@ -179,7 +207,7 @@
             </div>
 
             <div class="col-sm-6 col-lg-4 mb-4">
-                <img src="./img/morinomiya.png" class="img-fluid" data-bs-toggle="modal"
+                <img src="./img/morinomiya.png" class="img-fluid cursor_pointer myframe" data-bs-toggle="modal"
                     data-bs-target="#exampleModal3">
                 <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
@@ -236,7 +264,7 @@
             </div>
 
             <div class="col-sm-6 col-lg-4 mb-4">
-                <img src="./img/kitamura.png" class="img-fluid" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                <img src="./img/kitamura.png" class="img-fluid cursor_pointer myframe" data-bs-toggle="modal" data-bs-target="#exampleModal4">
                 <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog" style="max-width: 1000px">
@@ -291,6 +319,186 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <img src="./img/shiroari.png" class="img-fluid cursor_pointer myframe" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" style="max-width: 1000px">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4>岸和田や和泉市のシロアリ</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="./img/shiroari.png" class="img-fluid">
+                                    </div>
+                                    <div class="col">
+                                        <ul>
+                                            <li>
+                                                <h5 class="h6 lh-base">
+                                                    [案件名] : <a href="https://izumi-shiroari.com/"
+                                                        target="_blank">https://izumi-shiroari.com/</a>
+                                                </h5>
+                                            </li>
+                                            <li>
+                                                <h5 class="h6 lh-base">[使用ツール等] :
+                                                    <br>
+                                                    <span>
+                                                        ・Sublime 3 <br>
+                                                        ・Filezilla <br>
+                                                        ・jQuery <br>
+                                                        ・HTML5 <br>
+                                                        ・CSS3 <br>
+                                                        ・slick
+                                                    </span>
+                                                </h5>
+                                            </li>
+                                            <li>
+                                                <h5 class="h6 lh-base">[プロジェクト要員] :
+                                                    <br>
+                                                    <span>
+                                                        ・webデザイナー・コーダー1名（本人） <br>
+                                                        ・デバッガー1名 <br>
+                                                        ・イラストレーター外部発注
+                                                    </span>
+                                                </h5>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <img src="./img/champ.png" class="img-fluid cursor_pointer myframe" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" style="max-width: 1000px">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4>Champ</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="./img/champ.png" class="img-fluid">
+                                    </div>
+                                    <div class="col">
+                                        <ul>
+                                            <li>
+                                                <h5 class="h6 lh-base">
+                                                    [案件名] : <a href="https://champ-beauty.com/recruit/"
+                                                        target="_blank">https://champ-beauty.com/recruit/</a>
+                                                </h5>
+                                            </li>
+                                            <li>
+                                                <h5 class="h6 lh-base">[使用ツール等] :
+                                                    <br>
+                                                    <span>
+                                                        ・Sublime 2 <br>
+                                                        ・Filezilla <br>
+                                                        ・jQuery <br>
+                                                        ・HTML5 <br>
+                                                        ・CSS3
+                                                    </span>
+                                                </h5>
+                                            </li>
+                                            <li>
+                                                <h5 class="h6 lh-base">[プロジェクト要員] :
+                                                    <br>
+                                                    <span>
+                                                        ・webデザイナー・コーダー1名（本人）
+                                                        ・イラストレーター1名
+                                                    </span>
+                                                </h5>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 mt-4 pt-3 border-top">
+                                        <h5 class="h6 lh-base">工夫した点・実績 :
+                                            <br>
+                                            <span>
+                                                ・オシャレのトップページを作られてます。
+                                            </span>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <img src="./img/elfo.png" class="img-fluid cursor_pointer myframe" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+                <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" style="max-width: 1000px">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4>エルフォ</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="./img/elfo.png" class="img-fluid">
+                                    </div>
+                                    <div class="col">
+                                        <ul>
+                                            <li>
+                                                <h5 class="h6 lh-base">
+                                                    [案件名] : <a href="https://elfo-hair.jp/"
+                                                        target="_blank">https://elfo-hair.jp/</a>
+                                                </h5>
+                                            </li>
+                                            <li>
+                                                <h5 class="h6 lh-base">[使用ツール等] :
+                                                    <br>
+                                                    <span>
+                                                        ・Sublime 2 <br>
+                                                        ・Filezilla <br>
+                                                        ・jQuery <br>
+                                                        ・HTML5 <br>
+                                                        ・CSS3
+                                                    </span>
+                                                </h5>
+                                            </li>
+                                            <li>
+                                                <h5 class="h6 lh-base">[プロジェクト要員] :
+                                                    <br>
+                                                    <span>
+                                                        ・webデザイナー・コーダー1名（本人） <br>
+                                                        ・チェッカー１名 <br>
+                                                        ・イラストレーター1名
+                                                    </span>
+                                                </h5>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <a href="https://github.com/santosopy?tab=repositories" target="_blank">
+                    <p class="cursor_pointer myframe p-5 text-center bg-info fw-bold">
+                        その他
+                    </p>
+                </a>
             </div>
 
         </div>
