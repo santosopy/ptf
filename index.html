@@ -1,517 +1,481 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en-US">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="ポートフォリオ">
-    <title>ポートフォリオ</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <!-- title css -->
-    <style>
-        svg {
-            font-family: sans-serif;
-            font-weight: bold;
-        }
-
-        svg text {
-            text-transform: uppercase;
-            animation: stroke 5s alternate;
-            stroke-width: 2;
-            font-size: 60px;
-        }
-        .cursor_pointer{
-            cursor: pointer;
-            opacity: 1;
-            transition: all 0.4s;
-        }
-        .cursor_pointer:hover{
-            opacity: 0.7;
-        }
-        .myframe{
-            border: 1px dotted;
-            padding: 5px;
-        }
-        h5{
-            font-weight: bold !important;
-        }
-        h5 span{
-            font-size: 14px;
-            font-weight: normal;
-        }
-
-        @keyframes stroke {
-            0% {
-                fill: rgba(72, 138, 20, 0);
-                stroke: rgba(54, 95, 160, 1);
-                stroke-dashoffset: 25%;
-                stroke-dasharray: 0 50%;
-                stroke-width: 2;
-            }
-
-            70% {
-                fill: rgba(72, 138, 20, 0);
-                stroke: rgba(54, 95, 160, 1);
-            }
-
-            80% {
-                fill: rgba(72, 138, 20, 0);
-                stroke: rgba(54, 95, 160, 1);
-                stroke-width: 3;
-            }
-
-            100% {
-                fill: rgba(72, 138, 204, 1);
-                stroke: rgba(54, 95, 160, 0);
-                stroke-dashoffset: -25%;
-                stroke-dasharray: 50% 0;
-                stroke-width: 0;
-            }
-        }
-    </style>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My CV</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/aos.css?ver=1.1.0" rel="stylesheet">
+	<link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
+	<link href="css/main.css?ver=1.1.0" rel="stylesheet">
+	<noscript>
+		<style type="text/css">
+			[data-aos] {
+				opacity: 1 !important;
+				transform: translate(0) scale(1) !important;
+			}
+		</style>
+	</noscript>
 </head>
 
-<body>
-
-    <main class="container py-5">
-        <h3 class="pb-4">
-            <svg viewBox="0 0 1320 100">
-                <text x="50%" y="50%" dy=".35em" text-anchor="middle">
-                    Portfolio
-                </text>
-            </svg>
-        </h3>
-        <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 690px;">
-
-            <div class="col-sm-6 col-lg-4 mb-4">
-                <img src="./img/kyotoen.png" class="img-fluid cursor_pointer myframe" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog" style="max-width: 1000px">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4>京都援農隊</h4>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="row">
-                                    <div class="col">
-                                        <img src="./img/kyotoen.png" class="img-fluid">
-                                    </div>
-                                    <div class="col">
-                                        <ul>
-                                            <li>
-                                                <h5 class="h6 lh-base">
-                                                    [案件名] : <a href="https://kyoto-ennoutai.net/"
-                                                        target="_blank">kyoto-ennoutai.net</a>
-                                                </h5>
-                                            </li>
-                                            <li>
-                                                <h5 class="h6 lh-base">[使用ツール等] :
-                                                    <br>
-                                                    <span>
-                                                        ・Sublime 2 <br>
-                                                        ・Filezilla <br>
-                                                        ・jQuery <br>
-                                                        ・HTML5 <br>
-                                                        ・CSS3
-                                                    </span>
-                                                </h5>
-                                            </li>
-                                            <li>
-                                                <h5 class="h6 lh-base">[プロジェクト要員] :
-                                                    <br>
-                                                    <span>
-                                                        ・webデザイナー・コーダー3名（本人） <br>
-                                                        ・システムエンジニア1名 <br>
-                                                        ・イラストレーター1名
-                                                    </span>
-                                                </h5>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-12 mt-4 pt-3 border-top">
-                                        <h5 class="h6 lh-base">工夫した点・実績 :
-                                            <br>
-                                            <span>
-                                                ・インスタでアイテムを表示されます。
-                                                ・援農依頼の情報を増やせます。
-                                            </span>
-                                        </h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-lg-4 mb-4">
-                <img src="./img/kyosei.png" class="img-fluid cursor_pointer myframe" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog" style="max-width: 1000px">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4>日本新薬グループ共済会</h4>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="row">
-                                    <div class="col">
-                                        <img src="./img/kyosei.png" class="img-fluid">
-                                    </div>
-                                    <div class="col">
-                                        <ul>
-                                            <li>
-                                                <h5 class="h6 lh-base">
-                                                    [案件名] : <a href="https://nsg-kyosai.jp/"
-                                                        target="_blank">https://nsg-kyosai.jp/</a>
-                                                </h5>
-                                            </li>
-                                            <li>
-                                                <h5 class="h6 lh-base">[使用ツール等] :
-                                                    <br>
-                                                    <span>
-                                                        ・Illustrator <br>
-                                                        ・Sublime 3 <br>
-                                                        ・Filezilla <br>
-                                                        ・jQuery <br>
-                                                        ・HTML5 <br>
-                                                        ・CSS3
-                                                    </span>
-                                                </h5>
-                                            </li>
-                                            <li>
-                                                <h5 class="h6 lh-base">[プロジェクト要員] :
-                                                    <br>
-                                                    <span>
-                                                        ・webデザイナー・コーダー1名（本人） <br>
-                                                        ・デバッガー1名 <br>
-                                                        ・イラストレーター外部発注
-                                                    </span>
-                                                </h5>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-lg-4 mb-4">
-                <img src="./img/morinomiya.png" class="img-fluid cursor_pointer myframe" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal3">
-                <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog" style="max-width: 1000px">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4>森ノ宮医療大学教育後援会</h4>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="row">
-                                    <div class="col">
-                                        <img src="./img/morinomiya.png" class="img-fluid">
-                                    </div>
-                                    <div class="col">
-                                        <ul>
-                                            <li>
-                                                <h5 class="h6 lh-base">
-                                                    [案件名] : <a href="https://e-support.morinomiya-u.ac.jp/"
-                                                        target="_blank">https://e-support.morinomiya-u.ac.jp/</a>
-                                                </h5>
-                                            </li>
-                                            <li>
-                                                <h5 class="h6 lh-base">[使用ツール等] :
-                                                    <br>
-                                                    <span>
-                                                        ・Illustrator <br>
-                                                        ・Sublime 3 <br>
-                                                        ・Filezilla <br>
-                                                        ・jQuery <br>
-                                                        ・HTML5 <br>
-                                                        ・CSS3
-                                                    </span>
-                                                </h5>
-                                            </li>
-                                            <li>
-                                                <h5 class="h6 lh-base">[プロジェクト要員] :
-                                                    <br>
-                                                    <span>
-                                                        ・webデザイナー・コーダー1名（本人） <br>
-                                                        ・デバッガー1名 <br>
-                                                        ・イラストレーター外部発注
-                                                    </span>
-                                                </h5>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-lg-4 mb-4">
-                <img src="./img/kitamura.png" class="img-fluid cursor_pointer myframe" data-bs-toggle="modal" data-bs-target="#exampleModal4">
-                <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog" style="max-width: 1000px">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4>北村製作所</h4>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="row">
-                                    <div class="col">
-                                        <img src="./img/kitamura.png" class="img-fluid">
-                                    </div>
-                                    <div class="col">
-                                        <ul>
-                                            <li>
-                                                <h5 class="h6 lh-base">
-                                                    [案件名] : <a href="http://www.kitamura-ss.com/"
-                                                        target="_blank">http://www.kitamura-ss.com/</a>
-                                                </h5>
-                                            </li>
-                                            <li>
-                                                <h5 class="h6 lh-base">[使用ツール等] :
-                                                    <br>
-                                                    <span>
-                                                        ・Illustrator <br>
-                                                        ・Sublime 3 <br>
-                                                        ・Filezilla <br>
-                                                        ・jQuery <br>
-                                                        ・HTML5 <br>
-                                                        ・CSS3 <br>
-                                                        ・slick
-                                                    </span>
-                                                </h5>
-                                            </li>
-                                            <li>
-                                                <h5 class="h6 lh-base">[プロジェクト要員] :
-                                                    <br>
-                                                    <span>
-                                                        ・webデザイナー・コーダー1名（本人） <br>
-                                                        ・デバッガー1名 <br>
-                                                        ・イラストレーター外部発注 <br>
-                                                        ・システムエンジニア外部発注
-                                                    </span>
-                                                </h5>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-lg-4 mb-4">
-                <img src="./img/shiroari.png" class="img-fluid cursor_pointer myframe" data-bs-toggle="modal" data-bs-target="#exampleModal5">
-                <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog" style="max-width: 1000px">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4>岸和田や和泉市のシロアリ</h4>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="row">
-                                    <div class="col">
-                                        <img src="./img/shiroari.png" class="img-fluid">
-                                    </div>
-                                    <div class="col">
-                                        <ul>
-                                            <li>
-                                                <h5 class="h6 lh-base">
-                                                    [案件名] : <a href="https://izumi-shiroari.com/"
-                                                        target="_blank">https://izumi-shiroari.com/</a>
-                                                </h5>
-                                            </li>
-                                            <li>
-                                                <h5 class="h6 lh-base">[使用ツール等] :
-                                                    <br>
-                                                    <span>
-                                                        ・Sublime 3 <br>
-                                                        ・Filezilla <br>
-                                                        ・jQuery <br>
-                                                        ・HTML5 <br>
-                                                        ・CSS3 <br>
-                                                        ・slick
-                                                    </span>
-                                                </h5>
-                                            </li>
-                                            <li>
-                                                <h5 class="h6 lh-base">[プロジェクト要員] :
-                                                    <br>
-                                                    <span>
-                                                        ・webデザイナー・コーダー1名（本人） <br>
-                                                        ・デバッガー1名 <br>
-                                                        ・イラストレーター外部発注
-                                                    </span>
-                                                </h5>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-lg-4 mb-4">
-                <img src="./img/champ.png" class="img-fluid cursor_pointer myframe" data-bs-toggle="modal" data-bs-target="#exampleModal6">
-                <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog" style="max-width: 1000px">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4>Champ</h4>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="row">
-                                    <div class="col">
-                                        <img src="./img/champ.png" class="img-fluid">
-                                    </div>
-                                    <div class="col">
-                                        <ul>
-                                            <li>
-                                                <h5 class="h6 lh-base">
-                                                    [案件名] : <a href="https://champ-beauty.com/recruit/"
-                                                        target="_blank">https://champ-beauty.com/recruit/</a>
-                                                </h5>
-                                            </li>
-                                            <li>
-                                                <h5 class="h6 lh-base">[使用ツール等] :
-                                                    <br>
-                                                    <span>
-                                                        ・Sublime 2 <br>
-                                                        ・Filezilla <br>
-                                                        ・jQuery <br>
-                                                        ・HTML5 <br>
-                                                        ・CSS3
-                                                    </span>
-                                                </h5>
-                                            </li>
-                                            <li>
-                                                <h5 class="h6 lh-base">[プロジェクト要員] :
-                                                    <br>
-                                                    <span>
-                                                        ・webデザイナー・コーダー1名（本人）
-                                                        ・イラストレーター1名
-                                                    </span>
-                                                </h5>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-12 mt-4 pt-3 border-top">
-                                        <h5 class="h6 lh-base">工夫した点・実績 :
-                                            <br>
-                                            <span>
-                                                ・オシャレのトップページを作られてます。
-                                            </span>
-                                        </h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-lg-4 mb-4">
-                <img src="./img/elfo.png" class="img-fluid cursor_pointer myframe" data-bs-toggle="modal" data-bs-target="#exampleModal8">
-                <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog" style="max-width: 1000px">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4>エルフォ</h4>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="row">
-                                    <div class="col">
-                                        <img src="./img/elfo.png" class="img-fluid">
-                                    </div>
-                                    <div class="col">
-                                        <ul>
-                                            <li>
-                                                <h5 class="h6 lh-base">
-                                                    [案件名] : <a href="https://elfo-hair.jp/"
-                                                        target="_blank">https://elfo-hair.jp/</a>
-                                                </h5>
-                                            </li>
-                                            <li>
-                                                <h5 class="h6 lh-base">[使用ツール等] :
-                                                    <br>
-                                                    <span>
-                                                        ・Sublime 2 <br>
-                                                        ・Filezilla <br>
-                                                        ・jQuery <br>
-                                                        ・HTML5 <br>
-                                                        ・CSS3
-                                                    </span>
-                                                </h5>
-                                            </li>
-                                            <li>
-                                                <h5 class="h6 lh-base">[プロジェクト要員] :
-                                                    <br>
-                                                    <span>
-                                                        ・webデザイナー・コーダー1名（本人） <br>
-                                                        ・チェッカー１名 <br>
-                                                        ・イラストレーター1名
-                                                    </span>
-                                                </h5>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 mb-4">
-                <a href="https://github.com/santosopy?tab=repositories" target="_blank">
-                    <p class="cursor_pointer myframe p-5 text-center bg-info fw-bold">
-                        その他
-                    </p>
-                </a>
-            </div>
-
-        </div>
-
-    </main>
-
-    <script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-
-    <script async="" src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
-        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
-        crossorigin="anonymous"></script>
+<body id="top">
+	<header>
+		<div class="profile-page sidebar-collapse">
+			<nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
+				<div class="container">
+					<div class="collapse navbar-collapse justify-content-end" id="navigation">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link smooth-scroll" href="#about">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link smooth-scroll" href="#skill">Skills</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link smooth-scroll" href="#portfolio">Portfolio</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link smooth-scroll" href="#experience">Experience</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link smooth-scroll" href="#contact">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<div class="page-content">
+		<div>
+			<div class="profile-page">
+				<div class="wrapper">
+					<div class="page-header page-header-small" filter-color="green">
+						<div class="page-header-image" data-parallax="true"
+							style="background-image: url('images/cc-bg-1.jpg')"></div>
+						<div class="container">
+							<div class="content-center">
+								<div class="cc-profile-image">
+									<a href="#">
+										<img src="images/IMG_1994.jpg" alt="Image" class="img-fluid" />
+									</a>
+								</div>
+								<div class="h2 title">ジョコ　サントソ</div>
+							</div>
+						</div>
+						<div class="section">
+							<div class="container">
+								<div class="button-container">
+									<a class="btn btn-default btn-round btn-lg btn-icon"
+										href="https://www.linkedin.com/in/santoso-joko-4268241b2/" target="_blank"
+										rel="tooltip" title="Follow me on linkedin">
+										<i class="fa fa-linkedin"></i>
+									</a>
+									<a class="btn btn-default btn-round btn-lg btn-icon"
+										href="https://github.com/santosopy?tab=repositories" target="_blank"
+										rel="tooltip" title="Follow me on github">
+										<i class="fa fa-github"></i>
+									</a>
+									<a class="btn btn-default btn-round btn-lg btn-icon"
+										href="https://www.instagram.com/santo199027/" target="_blank" rel="tooltip"
+										title="Follow me on Instagram">
+										<i class="fa fa-instagram"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section" id="about">
+				<div class="container">
+					<div class="card" data-aos="fade-up" data-aos-offset="10">
+						<div class="row">
+							<div class="col-lg-6 col-md-12">
+								<div class="card-body">
+									<div class="h4 mt-0 title">About</div>
+									<p>Hello! I am Santoso. Web designer and developer.</p>
+									<p>I usually use frameworks like Bootstrap for coding. However, I am also proficient
+										in working with regular CSS or SCSS. <br>For the backend, I use WordPress CMS,
+										as it provides a wide range of plugins that allow me to easily optimize the
+										Python or PHP coding. <br>For the frontend, I am currently deepening my
+										knowledge of Vue.js via CDN. I have already worked on several projects using
+										Vue.js. <br>Everything is available on GitHub. If you have the time, please
+										visit my GitHub! </p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-12">
+								<div class="card-body">
+									<div class="h4 mt-0 title">Basic Information</div>
+									<div class="row">
+										<div class="col-sm-4">
+											<strong class="text-uppercase">Age:</strong>
+										</div>
+										<div class="col-sm-8">33</div>
+									</div>
+									<div class="row mt-3">
+										<div class="col-sm-4">
+											<strong class="text-uppercase">Email:</strong>
+										</div>
+										<div class="col-sm-8">santo199034@gmail.com</div>
+									</div>
+									<div class="row mt-3">
+										<div class="col-sm-4">
+											<strong class="text-uppercase">Phone:</strong>
+										</div>
+										<div class="col-sm-8">08033150664</div>
+									</div>
+									<div class="row mt-3">
+										<div class="col-sm-4">
+											<strong class="text-uppercase">Address:</strong>
+										</div>
+										<div class="col-sm-8">5-4 Imafukunishi, Joto Ward, Osaka City, Osaka Prefecture,
+											Japan</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section" id="skill">
+				<div class="container">
+					<div class="h4 text-center mb-4 title">Professional Skills</div>
+					<div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="progress-container progress-primary">
+										<span class="progress-badge">HTML</span>
+										<div class="progress">
+											<div class="progress-bar progress-bar-primary" data-aos="progress-full"
+												data-aos-offset="10" data-aos-duration="2000" role="progressbar"
+												aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+												style="width: 80%;"></div>
+											<span class="progress-value">80%</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="progress-container progress-primary">
+										<span class="progress-badge">CSS</span>
+										<div class="progress">
+											<div class="progress-bar progress-bar-primary" data-aos="progress-full"
+												data-aos-offset="10" data-aos-duration="2000" role="progressbar"
+												aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+												style="width: 80%;"></div>
+											<span class="progress-value">80%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="progress-container progress-primary">
+										<span class="progress-badge">JavaScript</span>
+										<div class="progress">
+											<div class="progress-bar progress-bar-primary" data-aos="progress-full"
+												data-aos-offset="10" data-aos-duration="2000" role="progressbar"
+												aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+												style="width: 85%;"></div>
+											<span class="progress-value">85%</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="progress-container progress-primary">
+										<span class="progress-badge">SCSS</span>
+										<div class="progress">
+											<div class="progress-bar progress-bar-primary" data-aos="progress-full"
+												data-aos-offset="10" data-aos-duration="2000" role="progressbar"
+												aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+												style="width: 80%;"></div>
+											<span class="progress-value">80%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="progress-container progress-primary">
+										<span class="progress-badge">Bootstrap</span>
+										<div class="progress">
+											<div class="progress-bar progress-bar-primary" data-aos="progress-full"
+												data-aos-offset="10" data-aos-duration="2000" role="progressbar"
+												aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+												style="width: 90%;"></div>
+											<span class="progress-value">90%</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="progress-container progress-primary">
+										<span class="progress-badge">PHP</span>
+										<div class="progress">
+											<div class="progress-bar progress-bar-primary" data-aos="progress-full"
+												data-aos-offset="10" data-aos-duration="2000" role="progressbar"
+												aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+												style="width: 70%;"></div>
+											<span class="progress-value">70%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section" id="portfolio">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 ml-auto mr-auto">
+							<div class="h4 text-center mb-4 title">Portfolio</div>
+							<div class="nav-align-center">
+								<a href="https://santosopy.github.io/ptf/folio" target="_blank">
+									<button type="button" class="btn btn-outline-primary">Click Here</button>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section" id="experience">
+				<div class="container cc-experience">
+					<div class="h4 text-center mb-4 title">Work Experience</div>
+					<div class="card">
+						<div class="row">
+							<div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
+								data-aos-duration="500">
+								<div class="card-body cc-experience-header">
+									<p>April 2020 - Present</p>
+									<div class="h5">Tsart</div>
+								</div>
+							</div>
+							<div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+								<div class="card-body">
+									<div class="h5">Web Design & Developer</div>
+									<p>
+										Mostly web coding. Besides that, creating an Instagram popup with the Instagram
+										Graph API. <br>
+										Besides that, I have experience creating a salon management system with a
+										WordPress admin background. <br>
+										And creating an invoice system. <br>
+										Scraping website HotPepper and sending the requested results to Line.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="row">
+							<div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
+								data-aos-duration="500">
+								<div class="card-body cc-experience-header">
+									<p>January 2019 - April 2020</p>
+									<div class="h5">Crisis Relations</div>
+								</div>
+							</div>
+							<div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+								<div class="card-body">
+									<div class="h5">Web Designer</div>
+									<p>
+										Mostly web coding.experience integrating email with a blast mail API
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="row">
+							<div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
+								data-aos-duration="500">
+								<div class="card-body cc-experience-header">
+									<p>December 2017 - December 2018</p>
+									<div class="h5">Adash</div>
+								</div>
+							</div>
+							<div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+								<div class="card-body">
+									<div class="h5">Web Designer</div>
+									<p>Mostly web coding.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="container cc-education">
+					<div class="h4 text-center mb-4 title">Education</div>
+					<div class="card">
+						<div class="row">
+							<div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
+								data-aos-duration="500">
+								<div class="card-body cc-education-header">
+									<p>2008 - 2012</p>
+									<div class="h5">Bachelor's Degree</div>
+								</div>
+							</div>
+							<div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+								<div class="card-body">
+									<div class="h5">Bachelor of Computer Science</div>
+									<p class="category">University Bina Nusantara</p>
+									<p>
+										Here, I am learning the basics of computers. It's my first time hearing
+										vocabulary like integer, string, char, and others. During my time here, I am
+										focused on learning about databases.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="row">
+							<div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50"
+								data-aos-duration="500">
+								<div class="card-body cc-education-header">
+									<p>2006 - 2008</p>
+									<div class="h5">High School</div>
+								</div>
+							</div>
+							<div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+								<div class="card-body">
+									<div class="h5">In general, high schools</div>
+									<p class="category">Al-Chasanah</p>
+									<p>
+										In general, high schools focus on studying natural sciences. Here, I am starting
+										to develop an interest in mathematics.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section" id="contact">
+				<div class="cc-contact-information" style="background-image: url('images/staticmap.jpg'); background-size: cover;">
+					<div class="container">
+						<div class="cc-contact">
+							<div class="row">
+								<div class="col-md-9">
+									<div class="card mb-0" data-aos="zoom-in">
+										<div class="h4 text-center title">Contact Me</div>
+										<div class="row">
+											<div class="col-md-6">
+												<div class="card-body">
+													<form action="mailto:santo199034@gmail.com" method="POST"
+														enctype="text/plain">
+														<div class="p pb-3">
+															<strong>Feel free to contact me </strong>
+														</div>
+														<div class="row mb-3">
+															<div class="col">
+																<div class="input-group">
+																	<span class="input-group-addon">
+																		<i class="fa fa-user-circle"></i>
+																	</span>
+																	<input class="form-control" type="text" name="name"
+																		placeholder="Name" required="required" />
+																</div>
+															</div>
+														</div>
+														<div class="row mb-3">
+															<div class="col">
+																<div class="input-group">
+																	<span class="input-group-addon">
+																		<i class="fa fa-file-text"></i>
+																	</span>
+																	<input class="form-control" type="text"
+																		name="Subject" placeholder="Subject"
+																		required="required" />
+																</div>
+															</div>
+														</div>
+														<div class="row mb-3">
+															<div class="col">
+																<div class="input-group">
+																	<span class="input-group-addon">
+																		<i class="fa fa-envelope"></i>
+																	</span>
+																	<input class="form-control" type="email"
+																		name="_replyto" placeholder="E-mail"
+																		required="required" />
+																</div>
+															</div>
+														</div>
+														<div class="row mb-3">
+															<div class="col">
+																<div class="form-group">
+																	<textarea class="form-control" name="message"
+																		placeholder="Your Message"
+																		required="required"></textarea>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col">
+																<button class="btn btn-primary"
+																	type="submit">Send</button>
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="card-body">
+													<p class="mb-0">
+														<strong>Address </strong>
+													</p>
+													<p class="pb-2">5-4 Imafukunishi, Joto Ward, Osaka City, Osaka
+														Prefecture,
+														Japan</p>
+													<p class="mb-0">
+														<strong>Phone</strong>
+													</p>
+													<p class="pb-2">08033150664</p>
+													<p class="mb-0">
+														<strong>Email</strong>
+													</p>
+													<p>santo199034@gmail.com</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container text-center">
+			<a class="cc-linkedin btn btn-link"
+				href="https://www.linkedin.com/in/santoso-joko-4268241b2/" target="_blank" rel="tooltip"
+				title="Follow me on linkedin">
+				<i class="fa fa-linkedin fa-2x"></i>
+			</a>
+			<a class="cc-github btn btn-link" href="https://github.com/santosopy?tab=repositories"
+				target="_blank" rel="tooltip" title="Follow me on github">
+				<i class="fa fa-github fa-2x"></i>
+			</a>
+			<a class="cc-instagram btn btn-link" href="https://www.instagram.com/santo199027/"
+				target="_blank" rel="tooltip" title="Follow me on Instagram">
+				<i class="fa fa-instagram fa-2x"></i>
+			</a>
+		</div>
+		<div class="h4 title text-center">Joko Santoso</div>
+	</footer>
+	<script src="js/core/jquery.3.2.1.min.js?ver=1.1.0"></script>
+	<script src="js/core/popper.min.js?ver=1.1.0"></script>
+	<script src="js/core/bootstrap.min.js?ver=1.1.0"></script>
+	<script src="js/now-ui-kit.js?ver=1.1.0"></script>
+	<script src="js/aos.js?ver=1.1.0"></script>
+	<script src="scripts/main.js?ver=1.1.0"></script>
 </body>
 
 </html>
