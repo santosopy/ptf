@@ -16,6 +16,37 @@
 
     <!-- title css -->
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&display=swap');
+
+        .edu {
+            font-family: 'Edu SA Beginner', cursive;
+        }
+        .col-sm-6.col-lg-4.mb-4{
+            position: relative;
+        }
+        .col-sm-6.col-lg-4.mb-4:hover .port-text{
+            opacity: 1;
+        }
+        .port-text {
+            cursor: pointer;
+            background-color: #ffffff;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            overflow: auto;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 7%;
+            text-align: center;
+            z-index: 100;
+            transition: opacity ease 200ms;
+        }
+
         svg {
             font-family: sans-serif;
             font-weight: bold;
@@ -26,6 +57,7 @@
             animation: stroke 5s alternate;
             stroke-width: 2;
             font-size: 60px;
+            font-family: 'Edu SA Beginner', cursive;
         }
 
         .cursor_pointer {
@@ -38,9 +70,11 @@
             opacity: 0.7;
         }
 
+        .row>* {
+            padding: 0 5px;
+        }
+
         .myframe {
-            border: 1px dotted;
-            padding: 5px;
             height: 100%;
             object-fit: cover;
             display: flex;
@@ -163,6 +197,10 @@
                         </div>
                     </div>
                 </div>
+                <div class="port-text" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                    <h4>京都援農隊</h4>
+                </div>
             </div>
 
             <div class="col-sm-6 col-lg-4 mb-4">
@@ -219,6 +257,10 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="port-text" data-bs-toggle="modal"
+                data-bs-target="#exampleModal2">
+                    <h4>日本新薬グループ共済会</h4>
                 </div>
             </div>
 
@@ -284,6 +326,10 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="port-text" data-bs-toggle="modal"
+                data-bs-target="#exampleModal3">
+                    <h4>森ノ宮医療大学教育後援会</h4>
                 </div>
             </div>
 
@@ -352,6 +398,10 @@
                         </div>
                     </div>
                 </div>
+                <div class="port-text" data-bs-toggle="modal"
+                data-bs-target="#exampleModal4">
+                    <h4>北村製作所</h4>
+                </div>
             </div>
 
             <div class="col-sm-6 col-lg-4 mb-4">
@@ -408,6 +458,10 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="port-text" data-bs-toggle="modal"
+                data-bs-target="#exampleModal5">
+                    <h4>岸和田や和泉市のシロアリ</h4>
                 </div>
             </div>
 
@@ -473,6 +527,10 @@
                         </div>
                     </div>
                 </div>
+                <div class="port-text" data-bs-toggle="modal"
+                data-bs-target="#exampleModal6">
+                    <h4>Champ</h4>
+                </div>
             </div>
 
             <div class="col-sm-6 col-lg-4 mb-4">
@@ -528,6 +586,10 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="port-text" data-bs-toggle="modal"
+                data-bs-target="#exampleModal7">
+                    <h4>エルフォ</h4>
                 </div>
             </div>
             <div class="col-sm-6 col-lg-4 mb-4">
