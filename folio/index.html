@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="ポートフォリオ">
     <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
-	<link rel="manifest" href="../favicon_io/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../favicon_io/site.webmanifest">
     <title>ポートフォリオ</title>
 
     <!-- Bootstrap core CSS -->
@@ -41,6 +41,11 @@
         .myframe {
             border: 1px dotted;
             padding: 5px;
+            height: 100%;
+            object-fit: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         h5 {
@@ -93,7 +98,7 @@
                 </text>
             </svg>
         </h3>
-        <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 690px;">
+        <div class="row" style="position: relative; height: 690px;">
 
             <div class="col-sm-6 col-lg-4 mb-4">
                 <img src="./img/kyotoen.png" class="img-fluid cursor_pointer myframe" data-bs-toggle="modal"
@@ -528,7 +533,7 @@
             <div class="col-sm-6 col-lg-4 mb-4">
                 <a href="https://github.com/santosopy?tab=repositories" target="_blank">
                     <p class="cursor_pointer myframe p-5 text-center bg-info fw-bold">
-                        その他 (Ωシステム系なので、ビズアールで見せれないです。)
+                        その他 (システム系なので、ビズアールで見せれないです。)
                     </p>
                 </a>
             </div>
@@ -539,10 +544,6 @@
 
     <script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-
-    <script async="" src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
-        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
         crossorigin="anonymous"></script>
 </body>
 
