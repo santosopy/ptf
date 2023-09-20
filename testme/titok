@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script async src="https://www.tiktok.com/embed.js"></script>
+    <link rel="stylesheet" type="text/css" id="ttEmbedLibCSS" href="https://lf16-tiktok-web.ttwstatic.com/obj/tiktok-web/tiktok/falcon/embed/embed_lib_v1.0.11.css">
+    <link rel="preconnect" href="https://www.tiktok.com" crossorigin="">
+    <link rel="preconnect" href="https://lf16-tiktok-common.ttwstatic.com" crossorigin="">
+    <link rel="preconnect" href="https://vmweb-sg.byteoversea.com" crossorigin="">
+</head>
+<body>
+    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@afloatschool_official/video/7226675141483252993" data-video-id="7226675141483252993" style="max-width: 605px;min-width: 325px;" >
+        <iframe style="width: 100%; height: 757px; display: block; visibility: unset; max-height: 757px;" name="__tt_embed__v10113606661648000" sandbox="allow-popups allow-popups-to-escape-sandbox allow-scripts allow-top-navigation allow-same-origin" src="https://www.tiktok.com/embed/v2/7226675141483252993?lang=en-US&amp;referrer=file:///Volumes/macminidisk2/download/test2.html"></iframe>
+    </blockquote> 
+    <script type="text/javascript" id="ttEmbedLibScript" src="https://lf16-tiktok-web.ttwstatic.com/obj/tiktok-web/tiktok/falcon/embed/embed_lib_v1.0.11.js"></script>
+</body>
+</html>
